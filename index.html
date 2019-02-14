@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			This is a Quick Form
+        </title>
+        <link href="./css/index.css" rel="stylesheet" type="text/css"/>
+		<meta  charset=“UTF-8”/>
+	</head>
+	<body>
+        <header>
+        <h1>Registry Form</h1>
+        </header>
+        <nav>
+            <ul class="menu">
+                <li>
+                    Home
+                </li>
+                <li>
+                    About the site
+                </li>
+                <li class="selected">
+                    Registry
+                </li>
+                <li>
+                    Contact
+                </li>
+                <li>
+                    Copyright
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <form id="myForm">
+                <fieldset>
+                    <legend>New account registry</legend>
+                    <span>Your infrmation is safe with us </span>
+                    <div>
+                        <p>Complete Name</p>
+                        <input type="text" id="nameInput" class="formElement"/>
+                    </div>
+                    <div>
+                        <p>Email</p>
+                        <input type="email" id="emailInput" class="formElement"/>
+                    </div>
+                    <div>
+                        <p>Password</p>
+                        <input type="password" id="passwordInput" class="formElement"/>
+                    </div>
+                        <p>Password Confirmation</p>
+                        <input type="password" id="passConfInput" class="formElement"/>
+                    <div>
+                        <p>Country</p>
+                        <select id="country">
+                            <option value="default">Select an option...</option>
+                            <option value="ca">Canada</option>
+                            <option value="mex">Mexico</option>
+                            <option value="us">United States</option>
+                        </select>
+                    </div>
+                    <div>
+                        <div>Gender:</div>
+                            <div>
+                                <input type="radio" id="radio1" name="gender" value="M"/>
+                                Masculine
+                            </div>
+                            <div>
+                                <input type="radio" id="radio2" name="gender" value="F"/>
+                                Feminine
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="submit" value="cancel" id="cancelButton" class="button"/>
+                        <input type="submit" value="submit" id="submitButton" class="button"/>
+                    </div>
+                </fieldset>
+            </form>
+        </main>
+        <script type="text/javascript" src="./js/index.js"></script>
+    </body>
+</html>
